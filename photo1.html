@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="windows-1251">
+  <title>Фотогалерея CSS3</title>
+  <style>
+  .hovergallery img{transform: scale(0.8);
+    -webkit-transform: scale(0.8);   <!--webkit:уменьшить изображение на 0.8х от оригинального размера-->
+    -moz-transform: scale(0.8);   <!--для mozila-->
+	-o-transform: scale(0.8);   <!--для opera-->
+	transition-duration: 0.5;
+	-webkit-transition-duration: 0.5;    <!--webkit:продолжительность анимации-->
+	-moz-transition-duration: 0.5;      <!--для mozila-->
+	-o-transition-duration: 0.5;    <!--для opera-->
+	opacity: 0.5;    <!--первоначальное затемнение изображени - непрозрачность-->
+	margin: 15px;
+	float: left;}
+	 
+   .hovergallery img:hover{transform: scale(1.2);
+     -webkit-transform: scale(1.2);
+	 -moz-transform: scale(1.2);
+	 -o-transform: scale(1.2);
+	 box-shadow:0 0 30px gray;   <!--CSS3 тень серого цвета в 30px вокруг изображения-->
+	 -webkit-box-shadow:0 0 30px gray;
+     -moz-box-shadow:0 0 30px gray;
+	 opacity: 1;}
+  </style>
+</head>
+<body>
+  <div class="hovergallery" align="center">
+     <a href="#"><img src="images/minsk_1.jpg"></a>
+	 <a href="#"><img src="images/minsk_2.jpg"></a>
+	 <a href="#"><img src="images/minsk_3.jpg"></a>
+	 <a href="#"><img src="images/minsk_4.jpg"></a>
+  </div>
+</body>
+</html>
